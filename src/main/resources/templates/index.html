@@ -23,6 +23,9 @@
                         <p><span th:text="${entry.summary}">SUMMARY</span></p>
                     </div>
                 </div>
+                <a th:href="@{/editar/{id}(id=${entry.id})}">Editar</a>
+
+                <a th:href="@{/borrar/{id}(id=${entry.id})}">Borrar</a>
             </li>
         </div>
     </ul>
